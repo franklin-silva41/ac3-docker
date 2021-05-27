@@ -36,7 +36,7 @@ public class App {
                 System.out.println(mon.getQtdProcessos().toString());
 
                 template.update("INSERT INTO dados (ram,temperatura,processador,dataDado,fkMaquina) VALUES (?,?,?,?,?)",
-                        "1000", mon.getTemperatura(), mon.getQtdProcessos().toString(), today, 4);
+                        "1000", mon.getTemperatura(), mon.getQtdProcessos().toString(), today, 5);
                 System.out.println("processador: "+mon.getMemoriaRam());
                 System.out.println("DATA: "+today);
                 System.out.println("-----------------");
