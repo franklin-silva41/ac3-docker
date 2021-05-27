@@ -37,7 +37,9 @@ public class App {
 
                 template.update("INSERT INTO dados (ram,temperatura,processador,dataDado,fkMaquina) VALUES (?,?,?,?,?)",
                         "1000", mon.getTemperatura(), mon.getQtdProcessos().toString(), today, 4);
-
+                System.out.println("processador: "+mon.getMemoriaRam());
+                System.out.println("DATA: "+today);
+                System.out.println("-----------------");
                 System.out.println("Dados enviados!");
             }
         }, delay, interval);
