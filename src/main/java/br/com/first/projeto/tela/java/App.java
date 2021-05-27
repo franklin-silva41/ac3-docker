@@ -18,8 +18,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 public class App {
 
     public static void main(String[] args) {
-        int delay = 5000;   // delay de 5 seg.
-        int interval = 5000;  // intervalo de 1 seg.
+        int delay = 1000;   // delay de 5 seg.
+        int interval = 4000;  // intervalo de 1 seg.
         Timer timer = new Timer();
         Monitoramento mon = new Monitoramento();
         Conexao con = new Conexao();
