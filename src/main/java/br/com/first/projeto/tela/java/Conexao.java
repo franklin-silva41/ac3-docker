@@ -8,10 +8,10 @@ public class Conexao {
     public Conexao() {
         this.banco = new BasicDataSource();
         banco.setDriverClassName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        banco.setUrl("jdbc:sqlserver://omnitrx.database.windows.net;" +
-                    "databaseName=omnitrx;");  
-        banco.setUsername("omnitrx");
-        banco.setPassword("#Gfgrupo6");
+        banco.setUrl("jdbc:sqlserver://ac3-franklin.database.windows.net;" +
+                    "databaseName=franklin-ac3;");  
+        banco.setUsername("franklin");
+        banco.setPassword("Pohavailogo41+");
     }
 
     public BasicDataSource getBanco() {
